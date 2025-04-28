@@ -12,7 +12,7 @@ public class DataQueue {
     }
 
     public boolean isFull() {
-        return queue.size() == maxSize;
+        return queue.size() >= maxSize - 1;
     }
 
     public boolean isEmpty() {
